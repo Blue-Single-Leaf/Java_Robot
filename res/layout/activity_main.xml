@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:gravity="fill_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.helloworld.MainActivity" >
+
+    
+    
+    
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/giv_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/ready" />
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginLeft="65dp"
+        android:background="@drawable/round_rect_background" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/iv_mic" 
+            android:layout_marginLeft="5dp" 
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+        <TextView 
+            android:id="@+id/split"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#88ffffff"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+        <TextView 
+            android:id="@+id/disListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#88ffffff"
+            android:hint="今年十九大有哪些重大消息"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+
+    </LinearLayout>
+	<TextView 
+	    android:id="@+id/state"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="225dp"
+        android:textSize="18sp"
+        android:textColor="#ffffffff"
+	    android:text="小柚正在静静聆听......"
+	    />
+	
+	
+	<TextView 
+	    android:id="@+id/answer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="65dp"
+        android:textSize="14sp"
+        android:textColor="#aaffffff"
+	    android:text="这是要回答的内容......"
+	    />
+    
+
+</RelativeLayout>
